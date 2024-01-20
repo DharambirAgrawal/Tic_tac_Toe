@@ -35,10 +35,17 @@
 
 Explore the live version of the Tic Tac Toe game:
 
-[![Tic Tac Toe Live Demo](https://github.com/Dharambirbro/Tic_tac_Toe/blob/main/img1.jpeg)](https://tic-tac-toe-client-pi.vercel.app)
-[![Tic Tac Toe Live Demo](https://github.com/Dharambirbro/Tic_tac_Toe/blob/main/img3.jpeg)](https://tic-tac-toe-client-pi.vercel.app)
+<a href="https://tic-tac-toe-client-pi.vercel.app">
+  <img src="https://github.com/Dharambirbro/Tic_tac_Toe/blob/main/img1.jpeg" alt="Tic Tac Toe Live Demo" width="400" style="border-radius: 10px; margin-right: 20px;">
+</a>
+
+<a href="https://tic-tac-toe-client-pi.vercel.app">
+  <img src="https://github.com/Dharambirbro/Tic_tac_Toe/blob/main/img3.jpeg" alt="Tic Tac Toe Live Demo" width="400" style="border-radius: 10px;">
+</a>
 
 <sup>Click on the images to play the game</sup>
+
+
 
 ## <a name="introduction">🤖 Introduction</a>
 
