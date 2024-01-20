@@ -1,7 +1,7 @@
 <div align="center">
   <br />
    <a href="https://tic-tac-toe-client-pi.vercel.app" target="_blank" style="border-radius: 30px; overflow: hidden; display: inline-block;">
-  <img src="https://github.com/Dharambirbro/Tic_tac_Toe/blob/main/img2.jpeg" alt="Project Banner" style="width: 300px; border-radius: 30px; object-fit: cover;">
+  <img src="https://github.com/Dharambirbro/Tic_tac_Toe/blob/main/img2.jpeg" alt="Project Banner" style="border-radius: 30px; object-fit: cover;">
 </a>
 
   <br />
