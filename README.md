@@ -36,6 +36,8 @@
 
 Explore the live version of the Tic Tac Toe game:
 
+at https://tic-tac-toe-client-pi.vercel.app
+
 <a href="https://tic-tac-toe-client-pi.vercel.app">
   <img src="https://github.com/Dharambirbro/Tic_tac_Toe/blob/main/img1.jpeg" alt="Tic Tac Toe Live Demo" width="500" style="border-radius: 10px; margin-right: 20px;">
 </a>
@@ -43,8 +45,6 @@ Explore the live version of the Tic Tac Toe game:
 <a href="https://tic-tac-toe-client-pi.vercel.app">
   <img src="https://github.com/Dharambirbro/Tic_tac_Toe/blob/main/img3.jpeg" alt="Tic Tac Toe Live Demo" width="500" style="border-radius: 10px;">
 </a>
-
-<sup>Click on the images to play the game</sup>
 
 ## <a name="introduction">🤖 Introduction</a>
 
@@ -85,15 +85,12 @@ Make sure you have the following installed on your machine:
 
 ```bash
 git clone https://github.com/Dharambirbro/Tic_tac_Toe.git
-//open two terminal
-//both
+# open two terminals
 cd Tic_tac_Toe
-//first
+# go to the client folder using:
 cd client
-
-//second
-cd server
-
+# go to the server folder using:
+cd ../server
 ```
 
 **Installation**
@@ -101,7 +98,7 @@ cd server
 Install the project dependencies using npm:
 
 ```bash
-//in both the terminal
+# install in both the client and server using:
 npm install
 ```
 
