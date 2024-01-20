@@ -1,7 +1,7 @@
 <div align="center">
   <br />
     <a href="https://tic-tac-toe-client-pi.vercel.app" target="_blank">
-      <img src="https://github.com/Dharambirbro/Tic_tac_Toe/blob/main/img1.jpeg" alt="Project Banner">
+      <img src="https://github.com/Dharambirbro/Tic_tac_Toe/blob/main/img1.jpeg" alt="Project Banner" style="border-radius: 10px;">
     </a>
   <br />
 
@@ -36,16 +36,14 @@
 Explore the live version of the Tic Tac Toe game:
 
 <a href="https://tic-tac-toe-client-pi.vercel.app">
-  <img src="https://github.com/Dharambirbro/Tic_tac_Toe/blob/main/img1.jpeg" alt="Tic Tac Toe Live Demo" width="400" style="border-radius: 10px; margin-right: 20px;">
+  <img src="https://github.com/Dharambirbro/Tic_tac_Toe/blob/main/img1.jpeg" alt="Tic Tac Toe Live Demo" width="500" style="border-radius: 10px; margin-right: 20px;">
 </a>
 
 <a href="https://tic-tac-toe-client-pi.vercel.app">
-  <img src="https://github.com/Dharambirbro/Tic_tac_Toe/blob/main/img3.jpeg" alt="Tic Tac Toe Live Demo" width="400" style="border-radius: 10px;">
+  <img src="https://github.com/Dharambirbro/Tic_tac_Toe/blob/main/img3.jpeg" alt="Tic Tac Toe Live Demo" width="500" style="border-radius: 10px;">
 </a>
 
 <sup>Click on the images to play the game</sup>
-
-
 
 ## <a name="introduction">🤖 Introduction</a>
 
@@ -138,9 +136,3 @@ npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) in your browser to view the project.
-
-
-
-
-
-
