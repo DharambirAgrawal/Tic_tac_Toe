@@ -1,348 +1,203 @@
-/* public/styles.css */
-:root {
-    --cell-size: 100px;
-    --mark-size: calc(var(--cell-size) * 0.8);
-    --primary-color: #3498db;
-    --secondary-color: #e74c3c;
-    --background-color: #ecf0f1;
-    --board-color: #fff;
-    --text-color: #2c3e50;
-}
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+/* Add these styles to your existing CSS file */
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f7fa;
+    margin: 0;
+    padding: 0;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--background-color);
-    color: var(--text-color);
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    max-width: 500px;
-    width: 100%;
-    padding: 20px;
-}
-
-h1 {
-    margin-bottom: 10px;
-    color: var(--primary-color);
-    text-align: center;
-    font-size: 2.5rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.game-options {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 10px;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
-}
-
-.game-options button {
-    flex: 1;
-    padding: 8px 16px;
-    background-color: #ddd;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.2s;
-}
-
-.game-options button.active {
-    background-color: var(--primary-color);
-    color: white;
-}
-
-.difficulty-selector {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-top: 10px;
-}
-
-.difficulty-selector select {
-    flex: 1;
-    padding: 8px;
-    border-radius: 4px;
-    border: 1px solid #ddd;
-}
-
-.board {
-    display: grid;
-    grid-template-columns: repeat(3, var(--cell-size));
-    grid-template-rows: repeat(3, var(--cell-size));
-    position: relative;
-    background-color: var(--board-color);
+    background-color: white;
+    border-radius: 16px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    overflow: hidden;
+    padding: 2rem;
+    width: 90%;
+    max-width: 500px;
 }
 
-.cell {
-    width: var(--cell-size);
-    height: var(--cell-size);
-    border: 2px solid #333;
+.home-container {
+    text-align: center;
+}
+
+.game-title {
+    margin-bottom: 2rem;
+}
+
+.game-title h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+    font-weight: 700;
+}
+
+.title-icons {
     display: flex;
     justify-content: center;
-    align-items: center;
-    position: relative;
-    cursor: pointer;
-    transition: transform 0.3s, background-color 0.3s;
+    gap: 1rem;
+    margin-top: -0.5rem;
 }
 
-.cell:hover {
-    background-color: rgba(52, 152, 219, 0.1);
-}
-
-.cell:nth-child(3n + 1) {
-    border-left: none;
-}
-
-.cell:nth-child(3n + 3) {
-    border-right: none;
-}
-
-.cell:nth-child(-n + 3) {
-    border-top: none;
-}
-
-.cell:nth-child(n + 7) {
-    border-bottom: none;
-}
-
-.cell.x::before,
-.cell.x::after {
-    content: '';
-    position: absolute;
-    width: calc(var(--mark-size) * 0.15);
-    height: var(--mark-size);
-    background-color: var(--primary-color);
-    border-radius: 10px;
-}
-
-.cell.x::before {
-    transform: rotate(45deg) scale(0);
-    animation: x-animation-before 0.3s forwards;
-}
-
-.cell.x::after {
-    transform: rotate(-45deg) scale(0);
-    animation: x-animation-after 0.3s 0.15s forwards;
-}
-
-@keyframes x-animation-before {
-    to {
-        transform: rotate(45deg) scale(1);
-    }
-}
-
-@keyframes x-animation-after {
-    to {
-        transform: rotate(-45deg) scale(1);
-    }
-}
-
-.cell.o::before {
-    content: '';
-    position: absolute;
-    width: var(--mark-size);
-    height: var(--mark-size);
-    border-radius: 50%;
-    border: calc(var(--mark-size) * 0.15) solid var(--secondary-color);
-    transform: scale(0);
-    animation: o-animation 0.3s forwards;
-}
-
-@keyframes o-animation {
-    to {
-        transform: scale(1);
-    }
-}
-
-.game-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-    width: 100%;
-}
-
-#status {
-    font-size: 1.2rem;
+.title-icons .icon {
+    font-size: 1.5rem;
     font-weight: bold;
-    text-align: center;
-    height: 30px;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
 }
 
-#restart {
-    padding: 10px 20px;
-    background-color: var(--primary-color);
+.title-icons .icon:first-child {
+    background-color: #4a89dc;
     color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1rem;
-    transition: background-color 0.3s, transform 0.2s;
 }
 
-#restart:hover {
-    background-color: #2980b9;
-    transform: translateY(-2px);
+.title-icons .icon:last-child {
+    background-color: #ed5565;
+    color: white;
 }
 
-#restart:active {
-    transform: translateY(0);
-}
-
-.scoreboard {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    margin-top: 20px;
-    padding: 10px;
-    background-color: var(--board-color);
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.score {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex: 1;
-    padding: 10px;
-}
-
-.score span:first-child {
-    font-size: 0.9rem;
+.game-description {
+    margin-bottom: 2rem;
     color: #666;
 }
 
-.score span:last-child {
-    font-size: 1.5rem;
-    font-weight: bold;
+.game-modes {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2rem;
 }
 
-/* Winning line animation */
-.win-line {
-    position: absolute;
-    background-color: rgba(46, 204, 113, 0.7);
-    z-index: 1;
-    transform: scale(0);
-    animation: win-line-animation 0.5s forwards;
+.mode-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem 1rem;
+    border-radius: 12px;
+    border: none;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
-.win-line.horizontal {
-    height: calc(var(--cell-size) * 0.1);
-    width: 100%;
+.mode-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
 }
 
-.win-line.vertical {
-    width: calc(var(--cell-size) * 0.1);
-    height: 100%;
+.mode-button i {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
 }
 
-.win-line.diagonal-1 {
-    height: calc(var(--cell-size) * 0.1);
-    width: calc(100% * 1.4);
-    transform-origin: left center;
-    transform: rotate(45deg) scale(0);
-    top: 50%;
-    left: 0;
+.mode-button:first-child {
+    color: #4a89dc;
 }
 
-.win-line.diagonal-2 {
-    height: calc(var(--cell-size) * 0.1);
-    width: calc(100% * 1.4);
-    transform-origin: right center;
-    transform: rotate(-45deg) scale(0);
-    top: 50%;
-    right: 0;
+.mode-button:last-child {
+    color: #ed5565;
 }
 
-@keyframes win-line-animation {
-    to {
-        transform: scale(1);
-    }
+.mode-button span:nth-child(2) {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
 }
 
-@keyframes win-line-animation-diagonal-1 {
-    to {
-        transform: rotate(45deg) scale(1);
-    }
+.mode-description {
+    font-size: 0.85rem;
+    color: #888;
 }
 
-@keyframes win-line-animation-diagonal-2 {
-    to {
-        transform: rotate(-45deg) scale(1);
-    }
+.recent-stats {
+    background-color: #f8fafc;
+    padding: 1rem;
+    border-radius: 12px;
+    margin-bottom: 1.5rem;
 }
 
-/* Game over overlay */
-.game-over {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
-    color: white;
+.recent-stats h3 {
+    margin-top: 0;
+    color: #555;
+    font-size: 1rem;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.stats-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stat-label {
+    font-size: 0.8rem;
+    color: #888;
+    margin-bottom: 0.25rem;
+}
+
+.stat-value {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.footer {
     display: flex;
     justify-content: center;
+    gap: 1rem;
+}
+
+.icon-button {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    color: #aaa;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.icon-button:hover {
+    color: #666;
+}
+
+/* Game container styles */
+
+.game-container {
+    display: none; /* Initially hidden */
+}
+
+.game-header {
+    display: flex;
     align-items: center;
-    font-size: 2rem;
-    font-weight: bold;
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.5s;
-    z-index: 2;
+    margin-bottom: 1.5rem;
 }
 
-.game-over.show {
-    opacity: 1;
+.back-button {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    color: #666;
+    cursor: pointer;
+    margin-right: 1rem;
 }
 
-/* Responsive design */
-@media (max-width: 500px) {
-    :root {
-        --cell-size: 80px;
-    }
-    
-    h1 {
-        font-size: 2rem;
-    }
-    
-    .game-options button, .difficulty-selector select {
-        padding: 6px 12px;
-        font-size: 0.9rem;
-    }
-    
-    #status {
-        font-size: 1rem;
-    }
+.game-header h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #333;
 }
 
-@media (max-width: 350px) {
-    :root {
-        --cell-size: 70px;
-    }
-    
-    h1 {
-        font-size: 1.8rem;
-    }
-}
+/* Existing styles for game board, etc. */

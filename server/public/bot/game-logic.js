@@ -233,11 +233,6 @@ function minimax(board) {
     return bestAction;
 }
 
-// Example usage
-// const board = initialState();
-// console.log("Initial board:", board);
-// const optimalMove = minimax(board);
-// console.log("Optimal first move:", optimalMove);
 
 /**
  * Returns a random valid move from the available actions

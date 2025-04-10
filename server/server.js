@@ -15,8 +15,12 @@ const __dirname = dirname(__filename);
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Serve the game page
-app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'index.html'));
+app.get('/bot', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public/bot', 'bot.html'));
+});
+
+app.get('/online', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public/online', 'index.html'));
 });
 
 // Start the server
