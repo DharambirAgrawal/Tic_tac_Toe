@@ -8,7 +8,7 @@
   <img src="https://img.shields.io/badge/-Socket.IO-black?style=for-the-badge&logoColor=white&logo=socket.io&color=010101" alt="Socket.IO" />
 </div>
 
-<h3 align="center">Tic Tac Toe — Multiplayer + AI Bot</h3>
+<h3 align="center">Tic Tac Toe — Multiplayer + Unbeatable AI Bot</h3>
 <p align="center">A dynamic Tic Tac Toe game built with Node.js, Express, and Socket.IO, featuring real-time online multiplayer and an unbeatable AI powered by Minimax.</p>
 
 ---
@@ -67,8 +67,8 @@ The AI in this game uses the classic **Minimax algorithm**, which ensures the bo
 - **Minimax** is a recursive algorithm used in decision-making and game theory.
 - It explores all possible moves of both the **player** and the **opponent** to determine the best outcome.
 - It assigns scores:
-  - Win → +10
-  - Loss → -10
+  - X → +1
+  - O → -1
   - Draw → 0
 - The bot chooses the move that **maximizes its chances** of winning while minimizing the player’s.
 
