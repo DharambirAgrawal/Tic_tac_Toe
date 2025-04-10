@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Tic-Tac-Toe Online</h1>
+        
+        <!-- Welcome Screen -->
+        <div id="welcome-screen" class="screen active">
+            <div class="welcome-box">
+                <h2>Welcome to Tic-Tac-Toe!</h2>
+                <div class="button-group">
+                    <button id="create-btn" class="btn btn-primary">Create New Game</button>
+                    <div class="divider">or</div>
+                    <div class="join-form">
+                        <input type="text" id="room-input" placeholder="Enter room code">
+                        <button id="join-btn" class="btn btn-secondary">Join Game</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Waiting Screen -->
+        <div id="waiting-screen" class="screen">
+            <div class="waiting-box">
+                <h2>Waiting for opponent...</h2>
+                <div class="spinner"></div>
+                <div class="share-info">
+                    <p>Share this code with your friend:</p>
+                    <div class="room-code">
+                        <span id="room-code">----</span>
+                        <button id="copy-btn" class="btn btn-small">Copy</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Game Screen -->
+        <div id="game-screen" class="screen">
+            <div class="game-info">
+                <div id="player-x" class="player">
+                    <div class="player-mark">X</div>
+                    <div class="player-label">Player X</div>
+                    <div class="player-status"></div>
+                </div>
+                <div id="status-message">Connecting...</div>
+                <div id="player-o" class="player">
+                    <div class="player-mark">O</div>
+                    <div class="player-label">Player O</div>
+                    <div class="player-status"></div>
+                </div>
+            </div>
+            
+            <div class="game-board">
+                <div class="board">
+                    <div class="cell" data-index="0"></div>
+                    <div class="cell" data-index="1"></div>
+                    <div class="cell" data-index="2"></div>
+                    <div class="cell" data-index="3"></div>
+                    <div class="cell" data-index="4"></div>
+                    <div class="cell" data-index="5"></div>
+                    <div class="cell" data-index="6"></div>
+                    <div class="cell" data-index="7"></div>
+                    <div class="cell" data-index="8"></div>
+                </div>
+            </div>
+            
+            <div class="game-actions">
+                <button id="play-again-btn" class="btn btn-primary" disabled>Play Again</button>
+                <button id="new-game-btn" class="btn btn-secondary">New Game</button>
+            </div>
+        </div>
+        
+        <!-- Error Modal -->
+        <div id="error-modal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Oops!</h2>
+                    <span class="close-modal">&times;</span>
+                </div>
+                <div class="modal-body">
+                    <p id="error-message">Something went wrong!</p>
+                </div>
+                <div class="modal-footer">
+                    <button id="ok-btn" class="btn btn-primary">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
