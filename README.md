@@ -1,22 +1,20 @@
 <div align="center">
   <br />
-   <a href="https://tic-tac-toe-client-pi.vercel.app" target="_blank" style="border-radius: 30px; overflow: hidden; display: inline-block;">
-  <img src="https://github.com/Dharambirbro/Tic_tac_Toe/blob/main/img2.jpeg" alt="Project Banner" style="border-radius: 30px; object-fit: cover;">
+   <a href="https://tic-tac-toe-gcrs.onrender.com" target="_blank" style="border-radius: 30px; overflow: hidden; display: inline-block;">
+  <img src="https://github.com/Dharambirbro/Tic_tac_Toe/blob/main/bot.jpeg" alt="Project Banner" style="border-radius: 30px; object-fit: cover;">
 </a>
 
   <br />
 
   <div>
     <img src="https://img.shields.io/badge/-Node_JS-black?style=for-the-badge&logoColor=white&logo=nodedotjs&color=339933" alt="nodedotjs" />
-    <img src="https://img.shields.io/badge/-Next_JS-black?style=for-the-badge&logoColor=white&logo=nextdotjs&color=000000" alt="nextdotjs" />
-    
-    
+    <img src="https://img.shields.io/badge/-Socket.IO-black?style=for-the-badge&logoColor=white&logo=socket.io&color=010101" alt="socket.io" />
   </div>
 
-  <h3 align="center">Tic tac toe Project</h3>
+  <h3 align="center">Tic Tac Toe Project</h3>
 
    <div align="center">
-     Here is my project of game tic tac toe which can be played online as well as offline
+     A simple yet engaging Tic Tac Toe game that can be played online with friends or against a bot.
     </div>
 </div>
 
@@ -36,38 +34,44 @@
 
 Explore the live version of the Tic Tac Toe game:
 
-at https://tic-tac-toe-client-pi.vercel.app
+[https://tic-tac-toe-gcrs.onrender.com](https://tic-tac-toe-gcrs.onrender.com)
 
-<a href="https://tic-tac-toe-client-pi.vercel.app">
-  <img src="https://github.com/Dharambirbro/Tic_tac_Toe/blob/main/img1.jpeg" alt="Tic Tac Toe Live Demo" width="500" style="border-radius: 10px; margin-right: 20px;">
+<a href="https://tic-tac-toe-gcrs.onrender.com">
+  <img src="https://github.com/Dharambirbro/Tic_tac_Toe/blob/main/home.jpeg" alt="Tic Tac Toe Live Demo" width="500" style="border-radius: 10px; margin-right: 20px;">
 </a>
 
-<a href="https://tic-tac-toe-client-pi.vercel.app">
-  <img src="https://github.com/Dharambirbro/Tic_tac_Toe/blob/main/img3.jpeg" alt="Tic Tac Toe Live Demo" width="500" style="border-radius: 10px;">
+<a href="https://tic-tac-toe-gcrs.onrender.com">
+  <img src="https://github.com/Dharambirbro/Tic_tac_Toe/blob/main/online.jpeg" alt="Tic Tac Toe Live Demo" width="500" style="border-radius: 10px;">
+</a>
+
+<a href="https://tic-tac-toe-gcrs.onrender.com">
+  <img src="https://github.com/Dharambirbro/Tic_tac_Toe/blob/main/demo.jpeg" alt="Tic Tac Toe Live Demo" width="500" style="border-radius: 10px;">
 </a>
 
 ## <a name="introduction">🤖 Introduction</a>
 
-This repository contains the corresponding code of Next.js 14+,Node.js Tailwind css ,socket.io etc. which are used to make the game.
+This repository contains the code for a Tic Tac Toe game built using **Node.js**, **Express.js**, and **Socket.IO**. The game features a simple HTML-based frontend served as static files and allows players to:
 
-If you're getting started and need assistance or face any bugs, you can email at dev.dharambir@gmail.com .
+- Play against a bot.
+- Play online with friends.
 
-If you liked the project give me a star.
+If you're getting started and need assistance or face any bugs, you can email at dev.dharambir@gmail.com.
+
+If you liked the project, give it a star!
 
 ## <a name="tech-stack">⚙️ Tech Stack</a>
 
 - Node.js
-- React.js
 - Express.js
-- Next.js
-- Tailwind CSS
-- socket.io
+- Socket.IO
 
 ## <a name="features">🔋 Features</a>
 
-👉 **Focused on logic**: This code is more focused on logig then its ui and designes.
+👉 **Play against a bot**: Test your skills against an AI bot.
 
-👉 **Beginner friendly**: The code used here is a simple js used in the syntax.
+👉 **Online multiplayer**: Play with friends in real-time using Socket.IO.
+
+👉 **Static HTML frontend**: Simple and lightweight frontend served as static files.
 
 ## <a name="quick-start">🤸 Quick Start</a>
 
@@ -85,12 +89,7 @@ Make sure you have the following installed on your machine:
 
 ```bash
 git clone https://github.com/Dharambirbro/Tic_tac_Toe.git
-# open two terminals
 cd Tic_tac_Toe
-# go to the client folder using:
-cd client
-# go to the server folder using:
-cd ../server
 ```
 
 **Installation**
@@ -98,39 +97,23 @@ cd ../server
 Install the project dependencies using npm:
 
 ```bash
-# install in both the client and server using:
 npm install
 ```
 
 **Set Up Environment Variables**
 
-For a few specific applications, we require environment variables. I've included a sample .env.example file for these essential projects.
-However, one crucial element needed for these projects is,
-
-create .env.local file at the root of client
+Create a `.env` file in the root directory and add the following:
 
 ```env
-NEXT_PUBLIC_SERVER=http://localhost:8080
-```
-
-create .env in the root of server
-
-```env
-CLIENT=http://localhost:3000/
+PORT=8080
 ```
 
 **Running the Project**
 
-go to server folder in terminal
+Start the server:
 
 ```bash
 npm start
 ```
 
-go to client folder in terminal
-
-```bash
-npm run dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) in your browser to view the project.
+Open [http://localhost:8080](http://localhost:8080) in your browser to view the project.
