@@ -1,120 +1,165 @@
 <div align="center">
   <br />
-   <a href="https://tic-tac-toe-gcrs.onrender.com" target="_blank" style="border-radius: 30px; overflow: hidden; display: inline-block;">
-  <img src="https://github.com/Dharambirbro/Tic_tac_Toe/blob/main/bot.png" alt="Project Banner" style="border-radius: 30px; object-fit: cover;">
-</a>
-
-
-  <br />
-
-  <div>
-    <img src="https://img.shields.io/badge/-Node_JS-black?style=for-the-badge&logoColor=white&logo=nodedotjs&color=339933" alt="nodedotjs" />
-    <img src="https://img.shields.io/badge/-Socket.IO-black?style=for-the-badge&logoColor=white&logo=socket.io&color=010101" alt="socket.io" />
-  </div>
-
-  <h3 align="center">Tic Tac Toe Project</h3>
-
-   <div align="center">
-     A simple yet engaging Tic Tac Toe game that can be played online with friends or against a bot.
-    </div>
+  <a href="https://tic-tac-toe-gcrs.onrender.com" target="_blank">
+    <img src="https://github.com/Dharambirbro/Tic_tac_Toe/blob/main/home.png" alt="Project Banner" style="border-radius: 30px; object-fit: cover;">
+  </a>
+  <br /><br />
+  <img src="https://img.shields.io/badge/-Node_JS-black?style=for-the-badge&logoColor=white&logo=nodedotjs&color=339933" alt="Node.js" />
+  <img src="https://img.shields.io/badge/-Socket.IO-black?style=for-the-badge&logoColor=white&logo=socket.io&color=010101" alt="Socket.IO" />
 </div>
 
-<br />
+<h3 align="center">Tic Tac Toe — Multiplayer + AI Bot</h3>
+<p align="center">A dynamic Tic Tac Toe game built with Node.js, Express, and Socket.IO, featuring real-time online multiplayer and an unbeatable AI powered by Minimax.</p>
 
-## 📋 <a name="table">Table of Contents</a>
+---
 
-1. 🚀 [Live Demo](#🚀-live-demo)
+## 📋 Table of Contents
+
+1. 🚀 [Live Demo](#live-demo)
 2. 🤖 [Introduction](#introduction)
-3. ⚙️ [Tech Stack](#tech-stack)
-4. 🔋 [Features](#features)
-5. 🤸 [Quick Start](#quick-start)
+3. 🧠 [The AI Bot (Minimax)](#the-ai-bot-minimax)
+4. ⚙️ [Tech Stack](#tech-stack)
+5. 🔋 [Features](#features)
+6. 🤸 [Quick Start](#quick-start)
+7. 🛠️ [Project Structure](#project-structure)
+8. 📬 [Contact](#contact)
 
-<br />
+---
 
 ## 🚀 Live Demo
 
-Explore the live version of the Tic Tac Toe game:
+Play the game live:
 
-[https://tic-tac-toe-gcrs.onrender.com](https://tic-tac-toe-gcrs.onrender.com)
+👉 [https://tic-tac-toe-gcrs.onrender.com](https://tic-tac-toe-gcrs.onrender.com)
 
-<a href="https://tic-tac-toe-gcrs.onrender.com">
-  <img src="https://github.com/Dharambirbro/Tic_tac_Toe/blob/main/home.png" alt="Tic Tac Toe Live Demo" width="500" style="border-radius: 10px; margin-right: 20px;">
-</a>
+<div align="center">
+  <a href="https://tic-tac-toe-gcrs.onrender.com">
+    <img src="https://github.com/Dharambirbro/Tic_tac_Toe/blob/main/online.png" width="400">
+  </a>
+  <a href="https://tic-tac-toe-gcrs.onrender.com">
+    <img src="https://github.com/Dharambirbro/Tic_tac_Toe/blob/main/bot.png" width="400">
+  </a>
+  <a href="https://tic-tac-toe-gcrs.onrender.com">
+    <img src="https://github.com/Dharambirbro/Tic_tac_Toe/blob/main/demo.png" width="400">
+  </a>
+</div>
 
-<a href="https://tic-tac-toe-gcrs.onrender.com">
-  <img src="https://github.com/Dharambirbro/Tic_tac_Toe/blob/main/online.png" alt="Tic Tac Toe Live Demo" width="500" style="border-radius: 10px;">
-</a>
+---
 
-<a href="https://tic-tac-toe-gcrs.onrender.com">
-  <img src="https://github.com/Dharambirbro/Tic_tac_Toe/blob/main/demo.png" alt="Tic Tac Toe Live Demo" width="500" style="border-radius: 10px;">
-</a>
+## 🤖 Introduction
 
-## <a name="introduction">🤖 Introduction</a>
+This is a fun and interactive web-based **Tic Tac Toe** game where users can:
 
-This repository contains the code for a Tic Tac Toe game built using **Node.js**, **Express.js**, and **Socket.IO**. The game features a simple HTML-based frontend served as static files and allows players to:
+- 🔹 Play **against a bot** powered by the **Minimax algorithm**.
+- 🔹 Invite and play **online in real-time** with friends using **Socket.IO**.
+- 🔹 Enjoy a clean and simple interface, perfect for casual gameplay.
 
-- Play against a bot.
-- Play online with friends.
+Built on a lightweight **Node.js server**, this project demonstrates a powerful mix of **frontend simplicity** and **backend intelligence**.
 
-If you're getting started and need assistance or face any bugs, you can email at dev.dharambir@gmail.com.
+---
 
-If you liked the project, give it a star!
+## 🧠 The AI Bot (Minimax)
 
-## <a name="tech-stack">⚙️ Tech Stack</a>
+The AI in this game uses the classic **Minimax algorithm**, which ensures the bot makes optimal moves and is practically unbeatable.
 
-- Node.js
-- Express.js
-- Socket.IO
+### 🧩 How Minimax Works:
 
-## <a name="features">🔋 Features</a>
+- **Minimax** is a recursive algorithm used in decision-making and game theory.
+- It explores all possible moves of both the **player** and the **opponent** to determine the best outcome.
+- It assigns scores:
+  - Win → +10
+  - Loss → -10
+  - Draw → 0
+- The bot chooses the move that **maximizes its chances** of winning while minimizing the player’s.
 
-👉 **Play against a bot**: Test your skills against an AI bot.
+### 🎯 Why it’s effective:
 
-👉 **Online multiplayer**: Play with friends in real-time using Socket.IO.
+- It evaluates **every possible game state**.
+- Prevents the player from winning if there's any chance to block.
+- It’s perfect for simple games like Tic Tac Toe where the number of states is finite.
 
-👉 **Static HTML frontend**: Simple and lightweight frontend served as static files.
+> Want to beat the bot? Try a draw — that’s the best you’ll get 😄
 
-## <a name="quick-start">🤸 Quick Start</a>
+---
 
-Follow these steps to set up the project locally on your machine.
+## ⚙️ Tech Stack
 
-**Prerequisites**
+- 🟢 **Node.js** – Backend runtime environment.
+- ⚪ **Express.js** – Server framework.
+- 🧩 **Socket.IO** – Real-time multiplayer functionality.
+- 🧾 **HTML/CSS/JS** – Clean and lightweight frontend.
 
-Make sure you have the following installed on your machine:
+---
 
+## 🔋 Features
+
+- ✅ **AI Bot with Minimax**: Unbeatable bot logic ensures challenging gameplay.
+- 🌐 **Real-time Online Multiplayer**: Play with friends across the globe.
+- 🎨 **Responsive Design**: Works seamlessly on desktop and mobile.
+- 🚀 **Lightweight Server**: Efficient backend with fast socket communication.
+
+---
+
+## 🤸 Quick Start
+
+### 📦 Prerequisites
+
+Make sure you have the following installed:
+
+- [Node.js](https://nodejs.org/)
+- [npm](https://www.npmjs.com/)
 - [Git](https://git-scm.com/)
-- [Node.js](https://nodejs.org/en)
-- [npm](https://www.npmjs.com/) (Node Package Manager)
 
-**Cloning the Repository**
+### 🛠️ Setup Instructions
 
 ```bash
+# Clone the repository
 git clone https://github.com/Dharambirbro/Tic_tac_Toe.git
 cd Tic_tac_Toe
-```
 
-**Installation**
-
-Install the project dependencies using npm:
-
-```bash
+# Install dependencies
 npm install
-```
 
-**Set Up Environment Variables**
+# Set environment variables
+echo "PORT=8080" > .env
 
-Create a `.env` file in the root directory and add the following:
-
-```env
-PORT=8080
-```
-
-**Running the Project**
-
-Start the server:
-
-```bash
+# Run the server
 npm start
 ```
 
-Open [http://localhost:8080](http://localhost:8080) in your browser to view the project.
+Then open your browser and go to: [http://localhost:8080](http://localhost:8080)
+
+---
+
+## 🗂️ Project Structure
+
+```bash
+Tic_tac_Toe/
+├── public/              # Frontend files (HTML/CSS/JS)
+│   ├── index.html
+│   └── ...
+├── src/
+│   ├── server.js        # Main server file
+│   ├── bot.js           # Minimax algorithm logic
+│   └── ...
+├── .env
+├── package.json
+└── README.md
+```
+
+---
+
+## 📬 Contact
+
+Feel free to reach out if you face issues or have suggestions:
+
+📧 Email: [dev.dharambir@gmail.com](mailto:dev.dharambir@gmail.com)  
+⭐ GitHub: [@DharambirAgrawal](https://github.com/DharambirAgrawal)
+
+If you like this project, consider giving it a ⭐ on GitHub — it helps a lot!
+
+---
+
+<div align="center">
+  Built with 💚 using Node.js and passion for logic games.
+</div>
