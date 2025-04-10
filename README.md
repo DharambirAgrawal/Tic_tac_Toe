@@ -1,7 +1,7 @@
 <div align="center">
   <br />
    <a href="https://tic-tac-toe-gcrs.onrender.com" target="_blank" style="border-radius: 30px; overflow: hidden; display: inline-block;">
-  <img src="https://github.com/Dharambirbro/Tic_tac_Toe/blob/main/bot.jpeg" alt="Project Banner" style="border-radius: 30px; object-fit: cover;">
+  <img src="https://github.com/Dharambirbro/Tic_tac_Toe/blob/main/bot.png" alt="Project Banner" style="border-radius: 30px; object-fit: cover;">
 </a>
 
 
@@ -38,15 +38,15 @@ Explore the live version of the Tic Tac Toe game:
 [https://tic-tac-toe-gcrs.onrender.com](https://tic-tac-toe-gcrs.onrender.com)
 
 <a href="https://tic-tac-toe-gcrs.onrender.com">
-  <img src="https://github.com/Dharambirbro/Tic_tac_Toe/blob/main/home.jpeg" alt="Tic Tac Toe Live Demo" width="500" style="border-radius: 10px; margin-right: 20px;">
+  <img src="https://github.com/Dharambirbro/Tic_tac_Toe/blob/main/home.png" alt="Tic Tac Toe Live Demo" width="500" style="border-radius: 10px; margin-right: 20px;">
 </a>
 
 <a href="https://tic-tac-toe-gcrs.onrender.com">
-  <img src="https://github.com/Dharambirbro/Tic_tac_Toe/blob/main/online.jpeg" alt="Tic Tac Toe Live Demo" width="500" style="border-radius: 10px;">
+  <img src="https://github.com/Dharambirbro/Tic_tac_Toe/blob/main/online.png" alt="Tic Tac Toe Live Demo" width="500" style="border-radius: 10px;">
 </a>
 
 <a href="https://tic-tac-toe-gcrs.onrender.com">
-  <img src="https://github.com/Dharambirbro/Tic_tac_Toe/blob/main/demo.jpeg" alt="Tic Tac Toe Live Demo" width="500" style="border-radius: 10px;">
+  <img src="https://github.com/Dharambirbro/Tic_tac_Toe/blob/main/demo.png" alt="Tic Tac Toe Live Demo" width="500" style="border-radius: 10px;">
 </a>
 
 ## <a name="introduction">🤖 Introduction</a>
